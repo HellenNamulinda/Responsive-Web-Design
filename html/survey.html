@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey: E-Health</title>
+    <link rel="stylesheet" type="text/css" href="../css/survey.css">
+</head>
+<body> 
+<div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">Survey Form for E-Health</h1>
+      <p id="description" class="description text-center">
+        Thank you for taking the time to help in developing an adoption framework for successful eHeath implementation.
+      </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="Enter your Email"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number"
+          >Age</label
+        >
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="18"
+          max="99"
+          class="form-control"
+          placeholder="Your Age"
+        />
+      </div>
+      <div class="form-group">
+        <p>Kindly select your category as a repondent</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select Your role</option>
+          <option value="medic">Medical Personnel(e.g Nurse, Doctor...)</option>
+          <option value="itperson">IT Personnel</option>
+          <option value="patient">Patient</option>
+          <option value="admin">Administrator(e.g receptionist, secretary)</option>
+          <option value="manager">Manager</option>
+        </select>
+      </div>
+       
+      <div class="form-group">
+        <p>Are you currently using an eHealth System?</p>
+        <label>
+          <input 
+          name="yes/no"
+            value="yes"
+            type="radio"
+            class="input-radio"
+            checked
+          />Yes</label
+        >
+        <label>
+          <input 
+          name="yes/no"
+            value="no"
+            type="radio"
+            class="input-radio"
+          />No</label> 
+      </div>
+   
+      <div class="form-group">
+        <p>
+          If yes, What exactly are using the E-health system for?
+          <span class="clue">(Check all that apply)</span>
+        </p>
+  
+        <label
+          ><input
+            name="use"
+            value="logistic"
+            type="checkbox"
+            class="input-checkbox"
+          />Logistic Management</label
+        >
+        <label>
+          <input
+            name="use"
+            value="diagnosis"
+            type="checkbox"
+            class="input-checkbox"
+          />Diagnosis</label
+        >
+        <label
+          ><input
+            name="use"
+            value="records"
+            type="checkbox"
+            class="input-checkbox"
+          />Electronic Health Record</label
+        >
+        <label
+          ><input
+            name="use"
+            value="dispensing"
+            type="checkbox"
+            class="input-checkbox"
+          />Dispensing Drugs</label
+        >
+        <label
+          ><input
+            name="use"
+            value="patient"
+            type="checkbox"
+            class="input-checkbox"
+          />Patient Management/Monitoring</label>
+
+        <label><input
+            name="use"
+            value="humanresource"
+            type="checkbox"
+            class="input-checkbox"
+          />Human Resource Management</label>
+        <label>
+          <input
+            name="use"
+            value="telemed"
+            type="checkbox"
+            class="input-checkbox"
+          />Telemedicine</label>
+
+        <label>
+          <input
+          name="use"
+          value="teleco"
+          type="checkbox"
+          class="input-checkbox"
+        />Teleconsultation</label>
+
+      <div class="form-group">
+        <p>If no, why?</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Enter the possible reason"
+        ></textarea>
+      </div>
+     
+      </div>
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+  <footer>
+    <div class="footer-content">
+        <p><em>HN &COPY; 2021</em></p>
+        <p><span>Email:</span> hknamulinda@gmail.com</p>
+        <p><span>Phone:</span> +256 753862466</p>
+    </div>
+</footer> 
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
