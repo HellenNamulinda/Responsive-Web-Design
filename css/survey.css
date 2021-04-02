@@ -1,0 +1,172 @@
+body {
+  background-color: #f0f0f0;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 18px;
+}
+
+h1,
+p {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+}
+ 
+.container {
+  width: 100%;
+  margin: 40px auto 0 auto;
+}
+
+.header {
+  padding: 0 0.625rem;
+  margin-bottom: 1.875rem;
+}
+
+.description {
+  font-style: italic;
+  font-weight: 200;
+}
+
+.clue {
+  margin-left: 0.25rem;
+  font-size: 0.9rem;
+  color: #e4e4e4;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* form */
+
+form {
+  background: #e0e0e4;
+  border-radius: 2px;
+}
+
+
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+
+.form-control {
+  display: block;
+  background-color: white;
+  width: 100%;
+  height: 40px;
+  padding: 4px 12px;
+  color: #515253;
+  background-clip: padding-box;
+  border: 1px solid #d1d4d6;
+  border-radius: 4px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 5px;
+  min-height: 20px;
+  min-width: 20px;
+}
+
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 5px;
+  resize: vertical;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 6px;
+  background: #4a64fa; 
+  cursor: pointer; 
+  font-size: inherit;
+  border: none;
+} 
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 550px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 740px;
+  }
+}
+
+@media (min-width: 480px) {
+  form {
+    padding: 20px;
+  }
+}
+footer {
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  background-color: rgb(12, 11, 11);
+  height: auto;
+  align-items: flex-end;
+  font-size: 15px;
+  color: white;
+  font-size: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-content p {
+  display: inline-flex;
+  justify-content: center;
+  width: 30%;
+}
+
+.footer-content a {
+  color: white;
+}
+
+.footer-content span {
+  align-self: flex-end;
+}
+@media screen and (max-width: 768px){
+.footer-content p {
+  width: 100%;
+  justify-content: center;
+}
+
+}
