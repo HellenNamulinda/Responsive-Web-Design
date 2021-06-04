@@ -1,0 +1,37 @@
+
+footer {
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  background-color: rgb(12, 11, 11);
+  height: auto;
+  align-items: flex-end;
+  font-size: 15px;
+  color: white;
+  font-size: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-content p {
+  display: inline-flex;
+  justify-content: center;
+  width: 30%;
+}
+
+.footer-content a {
+  color: white;
+}
+
+.footer-content span {
+  align-self: flex-end;
+}
+@media screen and (max-width: 768px){
+.footer-content p {
+  width: 100%;
+  justify-content: center;
+}
+
+}

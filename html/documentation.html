@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Documentation</title>
+    <link rel="stylesheet" type="text/css" href="../css/doc.css">
+     <link rel="stylesheet" type="text/css" href="../css/footer.css">
+</head>
+<body>
+   <nav id="navbar">
+    <header id="nav-header">JS Documentation</header>
+    <div id="nav-div">
+      <a class="nav-link" href="#Introduction">Introduction</a>
+      <a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a>
+      <a class="nav-link" href="#JS_Comments">JS Comments</a>
+      <a class="nav-link" href="#JS_Variables">JS Variables</a>
+      <a class="nav-link" href="#JS_Global_Variables">JS Global Variables</a>
+      <a class="nav-link" href="#JS_Data_Types">JS Data Types</a>
+      <a class="nav-link" href="#JS_Operators">JS Operators</a>
+       <a class="nav-link" href="#JS_If_Statements">JS If Statements</a>
+      <a class="nav-link" href="#JS_Switch">JS Switch</a>
+      <a class="nav-link" href="#JS_Loop">JS Loop</a>
+      <a class="nav-link" href="#JS_Functions">JS Functions</a>
+      <a class="nav-link" href="#Reference" rel="internal">Reference</a>
+    </div>
+  </nav>
+  
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <article>
+        <h3>What is Javascript</h3>
+        <br>
+        <p>JavaScript (js) is a light-weight object-oriented programming language which is used by several websites for scripting the webpages. It is an interpreted, full-fledged programming language that enables dynamic interactivity on websites when applied to an HTML document. It was introduced in the year 1995 for adding programs to the webpages in the Netscape Navigator browser. Since then, it has been adopted by all other graphical web browsers.</p>
+        <p>With JavaScript, users can build modern web applications to interact directly without reloading the page every time. The traditional website uses js to provide several forms of interactivity and simplicity.</p>
+        
+        <h4>Features</h4>
+        <ol>
+          <li>All popular web browsers support JavaScript as they provide built-in execution environments.</li>
+          <li>JavaScript follows the syntax and structure of the C programming language. Thus, it is a structured programming language.</li>
+          <li>JavaScript is a weakly typed language, where certain types are implicitly cast (depending on the operation).</li>
+          <li>It is a light-weighted and interpreted language.</li>
+          <li>JavaScript is an object-oriented programming language that uses prototypes rather than using classes for inheritance.
+  </li> 
+          <li>It is a case-sensitive language.</li>
+           <li>It provides good control to the users over the web browsers.</li>
+           <li>JavaScript is supportable in several operating systems including, Windows, macOS, etc.</li>
+         
+        </ol>
+      </article>
+    </section> 
+    <section class="main-section" id="JavaScript_and_Java">
+      <header>JavaScript and Java</header>
+      <article>
+        <h4>What’s The Difference Between Java And JavaScript?</h4> 
+        <p>While their names seem to imply a connection (“Is JavaScript a script in Java?”), that’s the biggest similarity. The two languages aren’t related in any technical or significant way.</p> 
+        <h5>Differences</h5>
+        <ul>
+          <li>Java is a standalone language—it likes its freedom. JavaScript is a little more emotionally co-dependent, meaning that it works with HTML and CSS on web pages to create dynamic content. </li> 
+          <li>Java is a static “object-oriented” programming language that works on multiple platforms. JavaScript is a dynamic programming language (or scripted language) that’s used to make websites and applications dynamic.</li> 
+        </ul> 
+        <h5>Simillarities</h5>
+        <ul>
+          <li>Both can run in a browser.</li> 
+          <li>Both can run on a server.</li> 
+        </ul> 
+         
+      </article>
+    </section> 
+    <section class="main-section" id="JS_Comments">
+      <header>JS Comments</header>
+      <article> 
+        <p>The JavaScript comments are meaningful way to deliver message. It is used to add information about the code, warnings or suggestions so that end user can easily interpret the code.</p>
+  
+  <p>The JavaScript comment is ignored by the JavaScript engine i.e. embedded in the browser.
+  </p>  
+        <h5>Single line comment</h5>
+        <p>It is represented by double forward slashes (//). 
+       It can be used before and after the statement.</p>
+  
+   <p>Let’s see the example of single-line comment i.e. added before the statement.</p>
+        <code>
+          // It is single line comment  
+  document.write("hello javascript");  
+        </code>
+        <p>Let’s see the example of single-line comment i.e. added after the statement.</p>
+        <code>
+         var a=10;  
+  var b=20;  
+  var c=a+b;//It adds values of a and b variable  
+  document.write(c);//prints sum of 10 and 20  
+        </code>
+        <h5>JavaScript Multi line Comment</h5>
+        <p>It can be used to add single as well as multi line comments. So, it is more convenient.</p>
+  
+  <p>It is represented by forward slash with asterisk then asterisk with forward slash.<br> 
+          For example:</p>
+        <code>
+          /* your code here  */ 
+        </code>
+  <p>It can be used before, after and middle of the statement.</p>
+        <p>Example of multi line comment;</p>
+        <code>
+          /* It is multi line comment.  
+  It will not be displayed */  
+  document.write("example of javascript multiline comment");  
+        </code>
+      </article>
+    </section> 
+    <section class="main-section" id="JS_Variables">
+      <header>JS Variables</header>
+      <article> 
+        <p>A JavaScript variable is simply a name of storage location. There are two types of variables in JavaScript : local variable and global variable.
+  
+  </p><br>
+        <p>There are some rules while declaring a JavaScript variable (also known as identifiers).</p><br>
+        <p>These are:</p>
+        <ol>
+          <li>Name must start with a letter (a to z or A to Z), underscore( _ ), or dollar( $ ) sign.</li>
+          <li>After first letter we can use digits (0 to 9), for example value1.</li>
+          <li>JavaScript variables are case sensitive, for example x and X are different variables.</li>
+           
+        </ol> 
+        <p>Correct JavaScript variables</p><br>
+        <code>
+         var x = 10;  
+  var _value="sonoo";  
+        </code>
+        <p>Inorrect JavaScript variables</p><br>
+        <code>
+        var  123=30;  
+  var *aa=320;  
+        </code>
+        <h5>Example of JavaScript variable</h5> 
+        <code>
+        var x = 10;  
+  var y = 20;  
+  var z=x+y;  
+  document.write(z);  
+        </code>
+      </article>
+    </section> 
+    <section class="main-section" id="JS_Global_Variables">
+      <header>JS Global Variables</header>
+      <article>
+         
+      </article>
+    </section>
+     
+    <section class="main-section" id="JS_Data_Types">
+      <header>JS Data Types</header>
+      <article>
+         
+      </article>
+    </section>
+    <section class="main-section" id="JS_Operators">
+      <header>JS Operators</header>
+      <article>
+         
+      </article>
+    </section>
+    <section class="main-section" id="JS_If_Statements">
+      <header>JS If Statements</header>
+      <article>
+        
+      </article>
+    </section>
+    <section class="main-section" id="JS_Switch">
+      <header>JS Switch</header>
+      <article>
+         
+      </article>
+    </section>
+    <section class="main-section" id="JS_Loop">
+      <header>JS Loop</header>
+      <article>
+         
+      </article>
+    </section>
+    <section class="main-section" id="JS_Functions">
+      <header>JS Functions</header>
+      <article>
+        
+      </article>
+    </section>
+    <section class="main-section" id="Reference">
+      <header>Reference</header>
+      <article>
+        <p>All the documentation in this page is taken from <a href="https://www.javatpoint.com/javascript-tutorial" target="_blank">Javatpoint</a>.</p>
+        </article>
+    </section>  
+  </main>
+
+    <footer>
+        <div class="footer-content">
+            <p><em>HN &COPY; 2021</em></p>
+            <p><span>Email:</span> hknamulinda@gmail.com</p>
+            <p><span>Phone:</span> +256 753862466</p>
+        </div>
+    </footer>  
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
