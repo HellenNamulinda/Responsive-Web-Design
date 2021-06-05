@@ -1,0 +1,156 @@
+ body {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+h2 {
+  text-align: center;
+  font-size: 20px;
+}
+
+/* HEADER */
+
+header {
+  background: #ffc6bf;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  display: block; 
+  height: 50px;
+}
+header img {
+  float: left;
+  padding: 5px;
+}
+
+#nav-bar { 
+  padding: 5px;
+  display: block;
+  float: right; 
+}
+.nav-link {
+  display: inline-block;
+}
+.nav-link {
+  color: #000;
+  padding: 5px 5px;
+  text-decoration: none;
+  font-size: 18px;
+}
+.nav-link:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* Trending */
+
+#trending {
+  padding-top: 50px;
+}
+ 
+#last-added {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+ 
+/* PAYMENTS*/
+#pricing {
+  margin-bottom: 50px;
+}
+
+#list-pricing {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around; 
+}
+#basic,
+#standard,
+#premium { 
+  border-radius: 10px; 
+  height: auto;
+  min-width: 200px;
+  max-width: 250px;
+  border: 1px solid #ddd;
+}
+
+#list-pricing h3 {
+  background: #ff7fae;
+  margin: 0;
+  height: 40px;
+  line-height: 50px;
+  color: #000;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#list-pricing p {
+  background: #f9f7f1;
+  margin-bottom: 0;
+  bottom: 0;
+  height: 50px;
+  color: #000;
+  border-radius: 0 0 10px 10px;
+  text-align: center;
+  font-weight: bold;
+}
+ 
+#list-pricing li {
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+form {
+  margin-left: 10%;
+  width: 70%;
+}
+form h5{
+  text-align: center;
+}
+.input-group {
+  margin: 10px 0px 10px 0px;
+}
+.input-group label {
+  display: block;
+  text-align: left;
+  margin: 3px;
+}
+.input-group input {
+  height: 30px;
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.input-group textarea {
+  height: 100px;
+  width: 100%;
+}
+.btn {
+  margin-left: 20%;
+  padding: 10px;
+  width: 50%;
+  font-size: 15px;
+  color: white;
+  background: #604060;
+  border: none;
+  border-radius: 5px;
+}
+ 
+@media only screen and (max-width: 540px){
+  
+#list-pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  #basic, 
+#standard,
+#premium { 
+  margin-bottom: 15px;
+}}
+
+ 
